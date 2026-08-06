@@ -1,0 +1,22 @@
+# 服务设置
+host: 0.0.0.0
+port: 7777
+
+# 图片生成设置
+# 每个请求中请求瓦片图片的并发数
+parallel_requests: 100
+# 默认的瓦片图片大小
+default_tile_size: 256
+
+# 日志设置
+# 日志等级 info warn error
+rust_log: "info"
+rust_backtrace: "1"
+
+# 缓存设置
+# 最大容量，缓存中最大图片数量
+max_capacity: 10000
+# 数据存在多久后清除数据，单位分钟
+time_to_live: 30
+# 数据空闲多久后清除数据，单位分钟
+time_to_idle: 5

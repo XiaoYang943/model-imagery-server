@@ -1,0 +1,33 @@
+[package]
+name = "bin"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "modelImageryServer" # 指定二进制文件名
+path = "src/main.rs"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.6.0"
+bytemuck = "1.16.0"
+derive_more = "0.99.17"
+env_logger = "0.11.3"
+fancy-regex = "0.13.0"
+futures = "0.3.30"
+glam = "0.28.0"
+image = "0.25.1"
+lazy_static = "1.4.0"
+log = "0.4.21"
+mini-moka = "0.10.3"
+new_string_template = "1.5.1"
+rand = "0.8.5"
+regex = "1.10.4"
+reqwest = {version="0.12.4",features=["blocking"]}
+schemars = "0.8.21"
+serde = {version="1.0.203",features = ["derive"]}
+serde_json = "1.0.117"
+serde_yaml = "0.9.34"
+wgpu = "0.20.0"
+winapi = {version="0.3.9",features=["wincon","processenv","winbase","consoleapi"]}
+
